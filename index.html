@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fenway PE and Health</title>
+<meta name="description" content="PE and Health with Mr. English at Fenway High School, Boston. How class works, what we learn, the fitness center, the golf and games units, grading, and information for families.">
+<link rel="icon" href="images/panthers.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0D5E42; --green-deep:#08432F; --green-tint:#E8F3EE;
+  --orange:#E65100; --orange-text:#BF360C; --gold:#F2B705;
+  --ink:#1F2933; --ink-muted:#52606D; --line:#D9E2DC;
+  --paper:#F6F8F6; --cream:#FBF7EF; --white:#FFFFFF;
+  --shadow:0 1px 3px rgba(0,0,0,.08);
+  --radius:8px;
+  --head:"Outfit",Arial,Helvetica,sans-serif;
+  --body:"Source Sans 3",Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--green);text-decoration:underline;text-underline-offset:2px}
+a:hover{color:var(--green-deep)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.2;margin:0 0 .5rem}
+h1{font-size:2.5rem}
+h2{font-size:1.75rem;color:var(--green);margin-top:0}
+h3{font-size:1.25rem;color:var(--green)}
+h4{font-size:1.05rem;margin-bottom:.25rem}
+p{margin:0 0 1rem}
+ul,ol{margin:0 0 1rem;padding-left:1.4rem}
+li{margin-bottom:.35rem}
+strong{font-weight:600}
+.skip{position:absolute;left:-999px;top:8px;background:var(--white);padding:8px 12px;z-index:100}
+.skip:focus{left:8px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.logos{display:flex;align-items:center;justify-content:center;gap:28px;padding:18px 0 10px}
+.logos img{height:56px;width:auto;object-fit:contain}
+.logos .panther{height:56px;width:56px;border-radius:50%}
+.hero{background:linear-gradient(135deg,var(--green),var(--green-deep));color:var(--white);border-radius:var(--radius);padding:32px 28px;margin:6px 0 20px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.hero h1{color:var(--white);margin-bottom:.25rem}
+.hero p{margin:0;font-size:1.15rem;opacity:.95}
+.badge{display:inline-block;background:var(--gold);color:#1F2933;font-weight:600;padding:8px 16px;border-radius:20px;font-size:.95rem}
+.tabs{position:sticky;top:0;z-index:20;background:var(--paper);padding:6px 0 0;border-bottom:2px solid var(--line);margin-bottom:24px}
+.tablist{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;position:relative}
+.tablist::-webkit-scrollbar{display:none}
+.tabs::after{content:"";position:absolute;right:0;top:0;bottom:2px;width:36px;background:linear-gradient(90deg,rgba(246,248,246,0),var(--paper));pointer-events:none}
+.tab{flex:0 0 auto;background:none;border:0;border-bottom:3px solid transparent;font:600 1rem var(--body);color:var(--ink-muted);padding:12px 14px;cursor:pointer;min-height:44px;white-space:nowrap}
+.tab:hover{color:var(--green)}
+.tab[aria-selected="true"]{color:var(--green);border-bottom-color:var(--green)}
+[role="tabpanel"][hidden]{display:none}
+[role="tabpanel"]{scroll-margin-top:70px}
+.panel>section{margin-bottom:32px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:16px}
+.card.do{border-left:4px solid var(--orange)}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.grid .card{margin-bottom:0}
+.grid>*,.two>*,.clock>*{min-width:0}
+.two{display:grid;gap:24px;grid-template-columns:1.2fr 1fr;align-items:center}
+.callout{background:var(--green-tint);border-left:4px solid var(--green);border-radius:var(--radius);padding:16px 20px;margin:0 0 16px}
+.callout.warm{background:var(--cream);border-left-color:var(--orange)}
+.callout p:last-child{margin-bottom:0}
+.quote{font-family:var(--head);font-size:1.5rem;color:var(--green);line-height:1.3;margin:0 0 .5rem}
+.btn{display:inline-block;background:var(--orange);color:var(--white);font-weight:600;font-size:1.125rem;padding:12px 22px;border-radius:var(--radius);text-decoration:none;min-height:44px}
+.btn:hover{background:var(--orange-text);color:var(--white)}
+.btn.ghost{background:transparent;color:var(--green);border:2px solid var(--green);font-size:1rem}
+.btn.ghost:hover{background:var(--green-tint)}
+details{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;box-shadow:var(--shadow);overflow:hidden}
+summary{list-style:none;cursor:pointer;background:var(--green);color:var(--white);font:700 1.1rem var(--head);padding:14px 48px 14px 18px;position:relative;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:20px;top:50%;width:10px;height:10px;border-right:2px solid var(--white);border-bottom:2px solid var(--white);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+summary:hover{background:var(--green-deep)}
+summary:focus-visible{outline-offset:-3px}
+.d-body{padding:18px 20px 6px}
+.d-body>:last-child{margin-bottom:12px}
+.tw{overflow-x:auto;margin:0 0 16px}
+table{border-collapse:collapse;width:100%;font-size:.97rem;background:var(--white)}
+caption{text-align:left;font-weight:600;color:var(--ink-muted);padding:0 0 8px;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--green-tint);color:var(--green-deep);font-weight:600}
+tbody tr:nth-child(even){background:#F7F9F7}
+td.n,th.n{text-align:right}
+.pill{display:inline-block;background:var(--green-tint);color:var(--green-deep);font-size:.85rem;font-weight:600;padding:2px 10px;border-radius:20px;margin:0 6px 6px 0}
+.pill.o{background:#FDEBDD;color:var(--orange-text)}
+.art{border-radius:var(--radius);border:1px solid var(--line);background:var(--cream)}
+.small{font-size:.9rem;color:var(--ink-muted)}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;position:relative;padding-left:44px;margin-bottom:10px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--green);color:var(--white);font:700 1rem var(--head);display:flex;align-items:center;justify-content:center}
+.clock{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:16px}
+.clock div{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--green);border-radius:var(--radius);padding:12px}
+.clock div:nth-child(2),.clock div:nth-child(4){border-top-color:var(--orange)}
+.clock b{display:block;font-family:var(--head);font-size:1.4rem;color:var(--green)}
+footer{margin-top:40px;padding:28px 0 40px;border-top:2px solid var(--line);color:var(--ink-muted);font-size:.95rem}
+footer p{margin-bottom:.5rem}
+@media (max-width:768px){
+  h1{font-size:1.8rem}
+  h2{font-size:1.5rem}
+  body{font-size:1rem}
+  .hero{grid-template-columns:1fr;text-align:center;padding:24px 18px}
+  .hero .badge{justify-self:center}
+  .two{grid-template-columns:1fr}
+  .card{padding:16px}
+  .clock{grid-template-columns:1fr 1fr}
+  .logos{gap:16px}
+  .logos img{height:44px}
+  .logos .panther{height:44px;width:44px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}summary::after{transition:none}}
+@media print{.tabs{display:none}[role="tabpanel"][hidden]{display:block}details{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header>
+  <div class="logos">
+    <img src="images/fenway-logo.webp" alt="Fenway High School">
+    <img class="panther" src="images/panthers.jpeg" alt="Fenway Panthers">
+    <img src="images/bps-logo.png" alt="Boston Public Schools">
+  </div>
+  <div class="hero">
+    <div>
+      <h1>PE and Health at Fenway High</h1>
+      <p>Mr. English. Grades 9 to 12. School year 2026-27.</p>
+    </div>
+    <span class="badge">Now: Unit 1, Foundations, through Oct 9</span>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Site sections">
+  <div class="tablist" role="tablist">
+    <button class="tab" role="tab" id="tab-home" aria-controls="home" aria-selected="true">Home</button>
+    <button class="tab" role="tab" id="tab-class" aria-controls="class" aria-selected="false" tabindex="-1">How Class Works</button>
+    <button class="tab" role="tab" id="tab-year" aria-controls="year" aria-selected="false" tabindex="-1">Units and Lessons</button>
+    <button class="tab" role="tab" id="tab-fitness" aria-controls="fitness" aria-selected="false" tabindex="-1">Fitness Center</button>
+    <button class="tab" role="tab" id="tab-games" aria-controls="games" aria-selected="false" tabindex="-1">Golf and Games</button>
+    <button class="tab" role="tab" id="tab-grading" aria-controls="grading" aria-selected="false" tabindex="-1">Grading</button>
+    <button class="tab" role="tab" id="tab-families" aria-controls="families" aria-selected="false" tabindex="-1">Families</button>
+    <button class="tab" role="tab" id="tab-design" aria-controls="design" aria-selected="false" tabindex="-1">Standards and Design</button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ============ HOME ============ -->
+<div class="panel" id="home" role="tabpanel" aria-labelledby="tab-home">
+  <section class="two">
+    <div>
+      <p class="quote">This is not traditional PE.</p>
+      <p>There is no competition ranking, no forced fitness testing, and no grading based on how fast, strong, or athletic you are. Students learn to take care of their bodies for life. They choose where they work, set their own fitness goals, and get more than one chance to show what they can do.</p>
+      <p><a class="btn" href="#families">Read the syllabus</a> &nbsp; <a class="btn ghost" href="#class">See how class works</a></p>
+    </div>
+    <img class="art" src="images/p1_huddle.webp" alt="Illustration of a class huddle in the mini gym">
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3>What students do</h3>
+      <p>Every class has two work blocks. Block 1 is the <strong>Feature</strong>, the unit we are learning, taught by Mr. English. Block 2 is the <strong>Anchors</strong>: weight room, bikes and rower, or laptops for a health lesson. Students sign up for the space they want, with a floor so nobody skips the parts that matter.</p>
+    </div>
+    <div class="card do">
+      <h3>What families need to know</h3>
+      <ul>
+        <li>Sneakers that tie, clothes you can move in, a water bottle.</li>
+        <li>Forgot something? We have loaner sneakers and water. Not a reason to sit out.</li>
+        <li>Missed a class? Make-up work is in Google Classroom and skill checks can be redone.</li>
+        <li>Questions: <a href="mailto:zacharyjenglish@gmail.com">zacharyjenglish@gmail.com</a>. Office hours Mon, Wed, Thu, 3:15 to 3:45 in the Commons.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>How this course is built</h3>
+      <p>Aligned to the Boston Public Schools PE Framework, the Massachusetts 2023 Health and PE Framework, the SHAPE America 2024 national PE standards, and the WIDA standards for students learning English. Grades measure what a student can do and know. See <a href="#design">Standards and Design</a>.</p>
+    </div>
+  </section>
+
+  <section class="two">
+    <img class="art" src="images/p3_spaces.webp" alt="Cutaway illustration of the PE spaces: mini gym, weight room, cardio suite, and outdoor courts">
+    <div>
+      <h2>Where we move</h2>
+      <ul>
+        <li><strong>Room 006, the weight room.</strong> Home base. Dumbbells, barbells, cable machine, and this year's new lat pulldown, EZ curl bar, rowing machine, and glute bike.</li>
+        <li><strong>Mini gym.</strong> Green turf. Games, skills, yoga, dance, badminton, volleyball, the putting course.</li>
+        <li><strong>Cardio suite.</strong> Bikes, treadmills, the rower, and the laptops for health lessons.</li>
+        <li><strong>Outside.</strong> Two basketball courts and the tennis courts right outside the PE office. Boston Common for walking routes and the chipping green when the weather allows.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="callout">
+    <p><strong>For the Fenway community.</strong> This course teaches teenagers how to train safely, set a goal and track it, handle stress, and find an activity they will keep doing after graduation. Work Hard. Be Yourself. Do the Right Thing.</p>
+  </section>
+</div>
+
+<!-- ============ HOW CLASS WORKS ============ -->
+<div class="panel" id="class" role="tabpanel" aria-labelledby="tab-class" hidden>
+  <section>
+    <h2>How class works</h2>
+    <p>PE meets once a week for 45 minutes. Students rotate through PE by quarter, about nine classes each. In those nine classes every student learns the norms and the spaces, sets a fitness goal from a baseline, trains in the weight room and cardio suite every class, learns the featured activity, and finishes with a personal activity plan.</p>
+    <div class="clock" aria-label="The 45-minute class">
+      <div><b>5 min</b>Opener. Do Now on the board, the goal read aloud, dynamic warm-up led by a student.</div>
+      <div><b>17 min</b>Block 1: the Feature. Whole class with Mr. English.</div>
+      <div><b>2 min</b>Switch. Water, equipment back, sign the log.</div>
+      <div><b>17 min</b>Block 2: the Anchors. Weight room, bikes and rower, laptops, or more Feature practice.</div>
+      <div><b>4 min</b>Closing circle. One sentence frame out loud, a 1 to 4 self-rating, clean-up check.</div>
+    </div>
+  </section>
+
+  <details>
+    <summary>The Feature and the Anchors</summary>
+    <div class="d-body two">
+      <div>
+        <p><strong>The Feature</strong> is the unit. It lives in the mini gym, or outside when the weather allows. Mr. English teaches there directly. It changes every 3 to 5 weeks.</p>
+        <p><strong>The Anchors</strong> are the weight room, the bikes and rower, and the laptops. They are open every class as a real option. Their focus changes each unit so they connect to the Feature. In the strength unit the rooms swap jobs: the weight room becomes the Feature and the mini gym becomes an Anchor for recovery and light games.</p>
+        <p><strong>Inside or outside.</strong> When a unit has both, students choose. Option A is outside: the courts, the field, Boston Common. Option B is the mini gym. Students pick based on weather, comfort, or daily mood. Both are fully taught. Neither is the easy version.</p>
+      </div>
+      <img class="art" src="images/p4_agenda.webp" alt="Illustration of the class agenda: opener, Feature block, switch, Anchor block, closing circle" loading="lazy">
+    </div>
+  </details>
+
+  <details>
+    <summary>Choice with a floor: the punch card</summary>
+    <div class="d-body two">
+      <img class="art" src="images/p7_punch.webp" alt="Illustration of the punch card showing Feature, fitness, laptop, and free blocks" loading="lazy">
+      <div>
+        <p>Students choose their Block 2 space on the sign-up board. The floor keeps the choice honest. Over a unit every student completes at least:</p>
+        <ul>
+          <li><strong>4 Feature blocks</strong> (2 for once-a-week sections)</li>
+          <li><strong>2 fitness blocks</strong> in the weight room or cardio suite (1 for once-a-week)</li>
+          <li><strong>1 laptop block</strong> for the health lesson</li>
+          <li><strong>1 free block</strong>, any space</li>
+        </ul>
+        <p>Board caps: weight room 8, bikes and rower 5, laptops 6. The Feature takes everyone else. Launch days and skill-check days keep the whole class in the Feature.</p>
+        <p>You don't get to pick your favorite space and skip the others. Each one teaches something different.</p>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Three norms: Respect. Effort. Safety.</summary>
+    <div class="d-body two">
+      <div>
+        <p>Students write and sign the community agreement in the first weeks. The norms cover every space, inside and out.</p>
+        <ul>
+          <li><strong>Respect.</strong> Your own body (no negative self-talk). Others' bodies (no comments about appearance, strength, or ability). The space and the equipment (return it, re-rack it, help others).</li>
+          <li><strong>Effort.</strong> Show up ready to move. Try new things, even when they feel uncomfortable at first. Give feedback kindly and specifically: "I noticed your form improved."</li>
+          <li><strong>Safety.</strong> Ask first. Closed-toe shoes. Clear floor. Re-rack everything. Never lift alone.</li>
+        </ul>
+        <p>Underneath the three: honesty in every reflection, and room for every fitness level, body type, and ability. No one gets excluded from PE. We find a way.</p>
+      </div>
+      <img class="art" src="images/p2_norms.webp" alt="Illustration of the three norms: Respect, Effort, Safety" loading="lazy">
+    </div>
+  </details>
+
+  <details>
+    <summary>Earned independence and student roles</summary>
+    <div class="d-body">
+      <p>Nobody lifts with weight until they finish the <strong>safety check-off</strong> in the first weeks: squat, hinge, push, pull, how to spot, bike and rower setup, laptop login. A green check on the wall chart means the student can sign up for the weight room. Everyone else works the bodyweight card until they earn it.</p>
+      <p>From the second week on, students run parts of the class from cards: <strong>warm-up leader, equipment, timekeeper, circle leader.</strong> The opener and closing run without the teacher. That is on purpose.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>The syllabus in one page</summary>
+    <div class="d-body">
+      <ul>
+        <li><strong>When:</strong> once a week, 45 minutes, room 006 (the weight room), then wherever the Feature lives that day. Boston Public Schools requires at least one semester of PE each year in grades 9 to 12 for graduation credit, with at least half of class time in moderate to vigorous movement.</li>
+        <li><strong>What it is:</strong> not about being the fastest or the strongest. Learning to take care of your body for life.</li>
+        <li><strong>The year:</strong> cooperative games and Boston Common walking in the fall, soccer and futsal, strength and power in the winter, badminton, volleyball and golf, yoga and mindfulness, dance in the spring, basketball, then student choice in June.</li>
+        <li><strong>Grades:</strong> Skills 35%, Knowledge 25%, Fitness Goal 20%, Personal Responsibility 20%. Scores are 1 to 4. Any 1 or 2 can be redone after practice, and the new score replaces the old one.</li>
+        <li><strong>Not in the grade:</strong> being late, what you wear, behavior. Those are handled separately.</li>
+        <li><strong>Bring:</strong> sneakers that tie, clothes you can move in, water. Layers for outdoor units.</li>
+        <li><strong>Homework:</strong> none required. Tracking your activity outside class is optional and helps.</li>
+        <li><strong>Contact:</strong> <a href="mailto:zacharyjenglish@gmail.com">zacharyjenglish@gmail.com</a>. Office hours Mon, Wed, Thu, 3:15 to 3:45, the Commons.</li>
+      </ul>
+      <p><a class="btn ghost" href="docs/PE1_Syllabus_2026-27.docx">PE 1 syllabus (Word, 55 KB)</a> &nbsp; <a class="btn ghost" href="docs/PE2_Syllabus_2026-27.docx">PE 2 syllabus (Word, 53 KB)</a> &nbsp; <a class="btn ghost" href="docs/PE_AT_A_GLANCE_EN_ES.docx">One page, English and Spanish (Word, 48 KB)</a></p>
+    </div>
+  </details>
+</div>
+
+<!-- ============ UNITS AND LESSONS ============ -->
+<div class="panel" id="year" role="tabpanel" aria-labelledby="tab-year" hidden>
+  <section class="two">
+    <div>
+      <h2>What is featured when</h2>
+      <p>The Feature changes by season. Your section learns whichever Feature is running during its rotation, plus the Anchors every class. The four project titles are the year's themes. Every student finishes their rotation with a personal activity plan.</p>
+    </div>
+    <img class="art" src="images/p6_path.webp" alt="Illustration of the nine units as a path across the year" loading="lazy">
+  </section>
+
+  <div class="tw">
+  <table>
+    <caption>PE 1 year at a glance, 2026-27</caption>
+    <thead><tr><th>Qtr</th><th>Unit</th><th>Dates</th><th>Feature and space</th><th>Project theme</th></tr></thead>
+    <tbody>
+      <tr><td>Q1</td><td>1. Foundations: norms, stations, community</td><td>Sept 8 to Oct 9</td><td>Cooperative games. Mini gym and outside</td><td rowspan="2">My Baseline and My Goal</td></tr>
+      <tr><td>Q1</td><td>2. Fitness planning and urban walking</td><td>Oct 13 to Nov 6</td><td>Walking routes and pacing. Boston Common</td></tr>
+      <tr><td>Q2</td><td>3. Soccer and futsal</td><td>Nov 9 to Dec 11</td><td>Outside, then futsal in the mini gym</td><td rowspan="2">My 4-Week Training Program</td></tr>
+      <tr><td>Q2</td><td>4. Strength and power</td><td>Dec 14 to Jan 22</td><td>Weight room is the Feature</td></tr>
+      <tr><td>Q3</td><td>5. Net and target games: badminton, volleyball, golf</td><td>Jan 25 to Feb 26</td><td>Mini gym, putting course, chipping station</td><td rowspan="2">My Stress Toolkit</td></tr>
+      <tr><td>Q3</td><td>6. Yoga, mobility, and mindfulness</td><td>Mar 1 to Apr 2</td><td>Mat work. Mini gym, lights low</td></tr>
+      <tr><td>Q4</td><td>7. Dance and creative movement</td><td>Apr 5 to Apr 30</td><td>Mini gym with music. Outside when warm</td><td rowspan="3">My Lifelong Activity Plan</td></tr>
+      <tr><td>Q4</td><td>8. Basketball</td><td>May 3 to May 28</td><td>Outside courts. Mini gym hoop as backup</td></tr>
+      <tr><td>Q4</td><td>9. Student choice and capstone</td><td>June 1 to June 21</td><td>Any space. Tennis courts and golf gear open</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Unit overviews</h3>
+  <p class="small">Each unit: what students will be able to do, what the Anchors focus on, and sample lesson goals. Standards are listed on the Standards and Design tab.</p>
+
+  <details>
+    <summary>Unit 1. Foundations: norms, stations, community</summary>
+    <div class="d-body">
+      <p><strong>Big questions:</strong> What does every person in this room need to be safe, included, and able to grow? How do we share five spaces and one teacher?</p>
+      <p><strong>I can:</strong> explain and follow our three norms in every space. Use the weight room, bikes, and laptops safely on my own. Design and teach a cooperative game with my group.</p>
+      <p><strong>Anchors:</strong> weight room tour, rules, and safety check-off (bodyweight squat, hinge, push, pull, spotting). Bike and rower setup, 10 easy minutes, the 1 to 10 effort scale. Laptops: Google Classroom login, wellness inventory, group norms lesson.</p>
+      <p><strong>Lesson goals:</strong></p>
+      <ol>
+        <li>I can name our three norms and say what each one looks like.</li>
+        <li>I can help write our community agreement and give an example of each norm.</li>
+        <li>I can name the weight room rules and show a safe bodyweight squat and hinge.</li>
+        <li>I can rotate on the timer, clean up my space, and log what I did.</li>
+        <li>I can teach a cooperative game with my group, and I can choose a space and follow through.</li>
+      </ol>
+      <p class="small">Games: Group Juggle, Human Knot, Helium Hoop, Cross the River, Minefield, Everybody's It. Evidence: bodyweight form check, norms and safety picture quiz, first log entries, group game self-rating.</p>
+    <p class="callout warm" style="margin-top:8px"><strong>At home:</strong> Ask your student to teach you the three norms and what each one looks like at home.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Unit 2. Fitness planning and urban walking</summary>
+    <div class="d-body">
+      <p><strong>Big questions:</strong> What does fitness mean for me? How do I know my training is working?</p>
+      <p><strong>I can:</strong> measure my heart rate and effort and hold a target pace. Read my baseline data and write a SMART goal with a 4-week plan. Stay safe being active outside in any weather.</p>
+      <p><strong>Anchors:</strong> baseline tests and a beginner full-body circuit. 10-minute bike or rower distance baseline, heart rate zones. Laptops: FITT and SMART goals, build the baseline data table.</p>
+      <p><strong>Lesson goals:</strong></p>
+      <ol>
+        <li>Launch: walk the first Common route, take a pulse, rate effort, baseline tests begin.</li>
+        <li>I can walk at three paces and use the talk test to tell them apart.</li>
+        <li>I can read my baseline data and write one SMART goal.</li>
+        <li>Skill check: hold a target pace on a set route. Project due: My Baseline and My Goal.</li>
+      </ol>
+      <p class="small">Three timed routes on Boston Common (short, medium, long), lead and sweep vests, weather cards. Words: pulse, beats per minute, pace, zone, baseline, FITT, layers.</p>
+    <p class="callout warm" style="margin-top:8px"><strong>At home:</strong> Take a 20-minute walk together and have your student show you how to count a pulse.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Unit 3. Soccer and futsal</summary>
+    <div class="d-body">
+      <p><strong>Big questions:</strong> How does where I stand change what my team can do? How do we handle conflict in a game?</p>
+      <p><strong>I can:</strong> pass, control, and move in small-sided games. Design and test a team tactic and explain what worked. Handle conflict and play fair. Choose food and drinks that help me play.</p>
+      <p><strong>Anchors:</strong> single-leg strength, stopping and cutting, core. Bike and rower match intervals, 30 seconds hard, 30 easy. Laptops: fueling and hydration for play, one tactics video with a response.</p>
+      <p><strong>Lesson goals:</strong></p>
+      <ol>
+        <li>I can control the ball with my first touch and pass to my partner's feet.</li>
+        <li>I can move to open space after I pass.</li>
+        <li>I can tell fair play from foul play and use a conflict huddle.</li>
+        <li>I can help design a tactic and say if it worked.</li>
+        <li>I can pass, control, and move in a game, and I can name what my team did well.</li>
+      </ol>
+      <p class="small">Starts outside, moves to futsal in the mini gym when it gets cold. Call words taught as vocabulary: "time", "man on", "switch", "mine".</p>
+    <p class="callout warm" style="margin-top:8px"><strong>At home:</strong> Ask what "move to open space" means. Watch a match together and spot it.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Unit 4. Strength and power</summary>
+    <div class="d-body">
+      <p><strong>Big questions:</strong> How do I get stronger safely? Who is selling me something, and is it true?</p>
+      <p><strong>I can:</strong> perform five lift patterns with safe form. Write and follow a 4-week program using overload and progression. Check whether a supplement or energy drink claim is true.</p>
+      <p><strong>The rooms swap.</strong> The weight room and functional area are the Feature. The mini gym is the Anchor for mobility, cornhole, putting, and light games. Bikes and rower run easy recovery sessions. Laptops: muscles, sleep, and recovery. Read a supplement label, check the claim.</p>
+      <p><strong>Lesson goals:</strong></p>
+      <ol>
+        <li>I can show the five lift patterns (squat, hinge, push, pull, carry) and write my program.</li>
+        <li>I can follow and log my program and coach my partner.</li>
+        <li>I can restart my program safely and spot and coach my partner.</li>
+        <li>I can land a jump safely, and I can check a claim on a label.</li>
+        <li>I can show safe form on two lifts and report my results. Project due: My 4-Week Training Program.</li>
+      </ol>
+      <p class="small">This is where the lat pulldown, EZ curl bar, and glute bike get their full introduction. See the Fitness Center tab.</p>
+    <p class="callout warm" style="margin-top:8px"><strong>At home:</strong> Ask to see the program. Read a supplement or energy drink label together and check one claim.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Unit 5. Net and target games: badminton, volleyball, golf</summary>
+    <div class="d-body">
+      <p><strong>Big questions:</strong> How do I practice so that I actually get better? What do I do with pressure?</p>
+      <p><strong>I can:</strong> serve and rally with control. Chip and putt to a target with a repeatable setup. Give and use specific feedback. Use a practice plan and a growth mindset under pressure.</p>
+      <p><strong>Anchors:</strong> shoulders, rotation, grip, side-to-side movement. Bike and rower rally sprints, 10 seconds fast, 50 easy. Laptops: competition, pressure, and self-talk. Chart your own accuracy data.</p>
+      <p><strong>Lesson goals:</strong></p>
+      <ol>
+        <li>I can hold the racket with a handshake grip and serve underhand to my partner.</li>
+        <li>I can hit a clear and a drop, and I can give my partner one specific piece of feedback.</li>
+        <li>I can set up a putt and a chip the same way every time and record my score out of 10.</li>
+        <li>I can bump, set, and serve a volleyball over the net in a cooperative rally.</li>
+        <li>I can move my opponent and set a growth goal for each match.</li>
+        <li>I can serve and rally with control, and I can explain what my data shows.</li>
+      </ol>
+      <p class="small">The mini gym is small: pairs rotate on a 3-minute timer. Badminton and volleyball share the net; the putting course and cornhole run along the side wall. Full details on the Golf and Games tab.</p>
+    <p class="callout warm" style="margin-top:8px"><strong>At home:</strong> Play catch, cornhole, or putt into a cup at home. Ask "aim or power?" after a miss.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Unit 6. Yoga, mobility, and mindfulness</summary>
+    <div class="d-body">
+      <p><strong>Big questions:</strong> What helps me manage stress? How does my body feel when it is calm?</p>
+      <p><strong>I can:</strong> hold a short flow with alignment and pick the right kind of stretch. Use at least three stress strategies and write my own plan. Teach a 3-minute routine to a small group.</p>
+      <p><strong>Anchors:</strong> slow tempo lifts, balance, light loaded mobility. Steady ride or row with a breathing focus. Laptops: stress, sleep, breathing. Draft the toolkit.</p>
+      <p><strong>Lesson goals:</strong></p>
+      <ol>
+        <li>I can follow the quiet-space norms and breathe slowly for one minute.</li>
+        <li>I can move through a 5-pose flow with my breath, and I can say when to use each kind of stretch.</li>
+        <li>I can try five stress strategies and rate how each one works for me.</li>
+        <li>I can build my own 3-minute routine and teach it to a partner.</li>
+        <li>I can hold a flow with alignment and teach my routine to a small group. Project due: My Stress Toolkit.</li>
+      </ol>
+    <p class="callout warm" style="margin-top:8px"><strong>At home:</strong> Ask your student to teach you their 3-minute routine. Try it before bed.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Unit 7. Dance and creative movement</summary>
+    <div class="d-body">
+      <p><strong>Big question:</strong> What does the way I move say about me and where I come from?</p>
+      <p><strong>I can:</strong> perform a dance form. Create and perform a 32-count sequence with my group. Explain what a dance means in a culture and how media shape body image.</p>
+      <p><strong>Anchors:</strong> power and rhythm: med ball throws, kettlebell swings, jump and land. Ride to the beat. Laptops: movement, culture, body image.</p>
+      <p><strong>Lesson goals:</strong></p>
+      <ol>
+        <li>I can keep the beat and dance a line dance with the count.</li>
+        <li>I can build a sequence with the five elements, and I can say how media shape body image.</li>
+        <li>I can perform our sequence with my group and give kind, specific feedback.</li>
+      </ol>
+      <p class="small">Students bring music and dances from home. Performing can be for the class or on video for the teacher only. The student chooses.</p>
+    <p class="callout warm" style="margin-top:8px"><strong>At home:</strong> Share a dance or song from your family. Your student may bring it to class.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Unit 8. Basketball</summary>
+    <div class="d-body">
+      <p><strong>Big questions:</strong> How do I lead a team? Where can I play in my city, and who gets to play there?</p>
+      <p><strong>I can:</strong> apply offense and defense tactics in a game. Lead a team as captain or coach. Make a claim with evidence about places to play in Boston.</p>
+      <p><strong>Anchors:</strong> jumping, landing safely, plyo boxes. Fast-break intervals, 15 seconds hard, 45 easy, and the 10-minute retest. Laptops: injury prevention, research places to play in Boston.</p>
+      <p><strong>Lesson goals:</strong></p>
+      <ol>
+        <li>I can dribble, pass, and shoot with control, and I know my baseline.</li>
+        <li>I can make space and use a give-and-go, and I can do my role from the script.</li>
+        <li>I can defend with my team, and I can design and test a play.</li>
+        <li>I can use tactics in a game, and I can make a claim about places to play and back it up.</li>
+      </ol>
+      <p class="small">Role cards: captain, coach, scorekeeper. Outside courts, mini gym hoop as backup.</p>
+    <p class="callout warm" style="margin-top:8px"><strong>At home:</strong> Ask where the nearest court or community center is and whether it feels open to everyone.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Unit 9. Student choice and capstone</summary>
+    <div class="d-body">
+      <p><strong>Big question:</strong> What will I actually do to stay active after this class ends?</p>
+      <p><strong>I can:</strong> carry out my own activity plan. Compare my September and June data. Present my lifelong activity plan.</p>
+      <p><strong>Lesson goals:</strong></p>
+      <ol>
+        <li>I can choose an activity that fits me and write a 3-week plan for it.</li>
+        <li>I can carry out my plan, and I can compare my baseline and final data.</li>
+        <li>I can present my lifelong activity plan and explain my choices with my own data.</li>
+      </ol>
+      <p class="small">Tennis courts open. Golf gear, badminton, volleyball, and basketball all available. Presentation template with sentence starters; option to present to a small group.</p>
+    <p class="callout warm" style="margin-top:8px"><strong>At home:</strong> Ask to hear the plan. Ask what changed between the first numbers and the last.</p>
+    </div>
+  </details>
+
+  <h3 style="margin-top:24px">PE 2: choose your elective</h3>
+  <details>
+    <summary>The five PE 2 electives</summary>
+    <div class="d-body two">
+      <div>
+        <p>PE 2 (grades 10 to 12) runs on the same frame at a higher level. Students write their own Anchor cards, lead warm-ups, and the Feature follows their elective. Choose by the end of the first unit.</p>
+        <ul>
+          <li><strong>Strength and Conditioning.</strong> The weight room is the Feature all year. Squat and deadlift progressions, pushing, pulling, power, programming, recovery.</li>
+          <li><strong>Lifetime Fitness Games.</strong> Basketball, soccer and futsal, net games (badminton, volleyball, pickleball, tennis), golf, tournament design, coaching a sport.</li>
+          <li><strong>Yoga and Wellness.</strong> Vinyasa, yin, breathwork, sleep science, nutrition, leading a class.</li>
+          <li><strong>Urban Movement and Exploration.</strong> Running, pace and intervals, Boston route mapping, parkour basics, race prep.</li>
+          <li><strong>Student-Designed Program.</strong> Define a goal and metrics with the teacher, run it for eight weeks, track it, reflect.</li>
+        </ul>
+        <p>All electives share the inside and outside choice, the Anchors, the same grading, and the right to reassess.</p>
+      </div>
+      <img class="art" src="images/p8_choice.webp" alt="Illustration of students choosing between activity options" loading="lazy">
+    </div>
+  </details>
+</div>
+
+<!-- ============ FITNESS CENTER ============ -->
+<div class="panel" id="fitness" role="tabpanel" aria-labelledby="tab-fitness" hidden>
+  <section>
+    <h2>The fitness center</h2>
+    <p>Room 006 and the cardio suite are open every class as an Anchor. Students who finish the safety check-off train on their own card while Mr. English circulates. This year we added a rowing machine, a lat pulldown, an EZ curl bar with Olympic plates, new dumbbells, and a glute bike.</p>
+  </section>
+
+  <details>
+    <summary>What is in the room</summary>
+    <div class="d-body">
+      <div class="tw">
+      <table>
+        <caption>Spaces and equipment</caption>
+        <thead><tr><th>Space</th><th>Equipment</th><th>Used for</th></tr></thead>
+        <tbody>
+          <tr><td>Weight room (006)</td><td>Dumbbells 5 to 45 lb, kettlebells, medicine balls, barbell with rack and safety bars, plate set, adjustable bench, cable machine, bands, suspension straps, pull-up bar, mirror, form posters. <strong>New:</strong> lat pulldown, EZ curl bar, Olympic plate set, rubber dumbbells, glute bike.</td><td>Self-guided strength circuits. The Feature during the strength unit.</td></tr>
+          <tr><td>Functional area</td><td>Rig with pull-up bars and dip attachment, wall balls, slam balls, plyo boxes (12, 18, 24 in), jump mats, turf.</td><td>Power, jumping and landing, carries.</td></tr>
+          <tr><td>Cardio suite</td><td>Stationary bikes, treadmills, elliptical, <strong>new magnetic rowing machine</strong> with 16 resistance levels, fans, laptops for health lessons.</td><td>Baselines, intervals, steady work, the health lesson station.</td></tr>
+          <tr><td>Mini gym</td><td>Green turf, badminton and volleyball net, basketball hoop, cornhole, futsal balls, cones, yoga mats, putting course.</td><td>The Feature most of the year.</td></tr>
+          <tr><td>Outside</td><td>Two basketball courts, tennis courts, pop-up canopy for shade, chipping green and practice balls.</td><td>Outdoor units and the chipping station.</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>New this year: how we use each piece</summary>
+    <div class="d-body">
+      <div class="grid">
+        <div class="card">
+          <h3>Rowing machine</h3>
+          <p>Full-body cardio that is easy on the joints. Order every stroke: <strong>legs, body, arms</strong> on the drive, then <strong>arms, body, legs</strong> on the way back. Flat back, chest tall, handle level with the lower ribs.</p>
+          <p>Students start on resistance level 3 to 5 (higher is heavier per stroke, not better) at a slow rate, about 20 to 24 strokes a minute. The "spicy" card is 10 minutes of intervals: 30 seconds hard, 30 easy.</p>
+          <p class="small"><strong>Cue card:</strong> Legs, body, arms. Arms, body, legs. Flat wrists. Straps snug over the ball of the foot. Handle back on the hook, never dropped.</p>
+        </div>
+        <div class="card">
+          <h3>Lat pulldown</h3>
+          <p>The pull pattern with real load. Thighs locked under the pad, hands just wider than shoulders, pull the bar to the top of the chest and lead with the elbows. No leaning way back, no bar behind the neck. Controlled up, controlled down.</p>
+          <p>Start with a weight you can pull 10 times with clean form. Lean back a little, never more than about 30 degrees, and hold that angle. The pin goes back where it started. Only checked-off students use it with the stack; everyone else learns on band rows first.</p>
+          <p class="small"><strong>Cue card:</strong> Chest up, shoulders down, bar to collarbone, slow up.</p>
+        </div>
+        <div class="card">
+          <h3>EZ curl bar and Olympic plates</h3>
+          <p>The angled bar keeps wrists neutral for curls, skull crushers, and upright rows. Collars on every time, plates loaded evenly, the bar racked when done.</p>
+          <p>Students learn arm work as an add-on after the five patterns, never instead of them. Start with the bare bar. Curl to shoulder height, squeeze, and lower for a slow three count.</p>
+          <p class="small"><strong>Cue card:</strong> Elbows glued, no swing, slow down. Collars on. Rack it, never lean it on a wall.</p>
+        </div>
+        <div class="card">
+          <h3>Glute bike</h3>
+          <p>A hip-drive machine that trains the glutes and hamstrings without loading the spine. Back flat against the pad, feet flat, push through the heels to full hip extension, squeeze at the top, and lower under control.</p>
+          <p>Good for students recovering from knee or back issues who still want to train the lower body. Set the pad and belt before the first rep. Start with the empty sled and add weight only after 10 clean reps.</p>
+          <p class="small"><strong>Cue card:</strong> Heels down. Ribs down. Hips all the way up, squeeze and tuck at the top. Lower slow.</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Safety rules and the check-off</summary>
+    <div class="d-body two">
+      <div>
+        <p>Five rules on the wall. They are not negotiable. A student who does not follow form, spotting, or equipment rules pauses weightlifting until they review safety with Mr. English.</p>
+        <ol class="steps">
+          <li><strong>Ask first.</strong> New machine, new weight, new exercise: ask before you try it.</li>
+          <li><strong>Closed-toe shoes.</strong> No shoes, no weight room.</li>
+          <li><strong>Clear floor.</strong> Bags, bottles, and phones stay off the turf.</li>
+          <li><strong>Re-rack everything.</strong> Plates, dumbbells, pins, handles.</li>
+          <li><strong>Never lift alone.</strong> Spotter script: "I am ready to spot. Are you ready to lift?"</li>
+        </ol>
+      </div>
+      <div class="callout warm">
+        <p><strong>The safety check-off</strong> comes before any weight. Students show a bodyweight squat, a hinge, a push (incline push-up), a pull (band row), how to spot, bike and rower setup (seat at hip height, feet strapped), and laptop login. A green check on the wall chart opens the weight room sign-up. Max 8 students lifting at a time; the rest are on cardio or the bodyweight card. No food in the gym. Phones stay in the holder except for music on a bike. Injury: tell Mr. English immediately. First aid kit is by the door.</p>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>The circuit cards</summary>
+    <div class="d-body">
+      <div class="grid">
+        <div class="card"><h4>Bodyweight card (everyone)</h4><p>Squats, push-ups, plank, lunges. 3 rounds, 1 minute rest between rounds. Write the reps on your log.</p></div>
+        <div class="card"><h4>Full-body card (checked-off)</h4><p>Squat, bench or push, row or lat pulldown, hinge, carry. 3 rounds. Write the weight and reps for every set. Progress when every set is clean.</p></div>
+        <div class="card"><h4>Cardio card</h4><p>Bike, rower, or treadmill. 10 to 15 minutes steady. Rate your effort 1 to 10 and your mood. Baseline: how far in 10 minutes.</p></div>
+        <div class="card"><h4>Spicy card</h4><p>Rower or bike intervals. 30 seconds hard, 30 seconds easy, 10 minutes. Only after two steady sessions.</p></div>
+      </div>
+      <p class="small">Progression on every card: bodyweight, then dumbbells, then barbells. The log is the evidence for the Fitness Goal part of the grade.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Thank you to our donors</summary>
+    <div class="d-body">
+      <p>Much of the new equipment came through DonorsChoose projects funded by families, alumni, and strangers who believe teenagers deserve a real place to train: <em>Gearing Up for Greatness: Strength Training Starts Here</em>, <em>Fuel for Learning: Healthy Snacks and Options for Healthy Students</em>, and <em>Balanced Nutrition, One Bar at a Time</em>. The rower, the EZ curl bar, the plates, the dumbbells, the fans, and the snack shelf are theirs. Thank you.</p>
+    </div>
+  </details>
+</div>
+
+<!-- ============ GOLF AND GAMES ============ -->
+<div class="panel" id="games" role="tabpanel" aria-labelledby="tab-games" hidden>
+  <section>
+    <h2>Golf and games</h2>
+    <p>Lifetime games are games you can still play at 60. Golf, badminton, volleyball, pickleball, basketball, and cornhole all live in this course. The focus is the same in every one: learn how to practice, give useful feedback, and handle pressure.</p>
+  </section>
+
+  <details>
+    <summary>Golf: chipping and putting</summary>
+    <div class="d-body">
+      <p>New this year. We have a chipping green with practice balls for the short game and a set of mini golf holes, putters, and mats for the putting course in the mini gym. Nobody needs to have played before. Golf is a target game: the skill is a repeatable setup and a calm swing, and the data tells you if you are getting better.</p>
+      <div class="callout warm">
+        <p><strong>Safety comes before the first club is handed out.</strong> One hitter per mat, everyone else behind the safety spot until the hitter is done. Nobody walks in front of a hitting line. Clubs stay below the waist when walking and no practice swings outside your mat. Foam or limited-flight balls only for chipping; real balls only on the putting course. Quiet while someone putts. Call "clear" before collecting. Students sign the golf safety sheet first.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h4>Putting (mini gym)</h4>
+          <ul>
+            <li>Setup: feet shoulder width, eyes over the ball, light grip, shoulders rock and wrists stay quiet.</li>
+            <li>Progression: 3-foot putts to a cup, then 6 feet, then the mini golf holes with obstacles.</li>
+            <li>Score card: putts to hole out, 9 holes. Track it across the unit.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Chipping (outside, or indoor mats)</h4>
+          <ul>
+            <li>Setup: ball back in the stance, weight on the front foot, hands ahead, small swing, brush the mat.</li>
+            <li>Progression: land the ball on a towel, then on the green, then inside a hoop.</li>
+            <li>Score card: balls on the target out of 10.</li>
+          </ul>
+        </div>
+        <div class="card do">
+          <h4>Design a hole</h4>
+          <ul>
+            <li>After a week on the course, groups design and build their own mini golf hole from cones, mats, boards, and recycled materials.</li>
+            <li>The class plays every hole. Groups score par, fairness, and creativity, then revise.</li>
+            <li>The station card asks the golfer's two questions on every miss: adjust aim, or adjust power?</li>
+          </ul>
+        </div>
+      </div>
+      <p>Golf runs inside <strong>Unit 5, Net and Target Games</strong> (January to February). Golf is a target game under the same standards as cornhole, and the Massachusetts framework names it as a lifetime activity.  It is open again in June for student choice and appears in the PE 2 Lifetime Fitness Games elective. Sample lesson goal: "I can set up a putt and a chip the same way every time and record my score out of 10."</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Badminton</summary>
+    <div class="d-body">
+      <p>The net game that fits our mini gym. Handshake grip, legal underhand serve, rally, clear, drop, doubles. Pairs rotate on a 3-minute timer. Week 3 is a ladder tournament where every match has a growth goal, not just a score. Data card: longest rally count.</p>
+      <p>Feedback frame students use with each other: "I noticed ___. Next time try ___."</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Volleyball</summary>
+    <div class="d-body">
+      <p>Shares the net with badminton in Unit 5. Ready position, forearm pass (bump), overhead pass (set), underhand serve. Cooperative rallies first: how many touches can the group keep going. Then small-sided 3v3 with a serve from wherever you can get it over. Seated volleyball is a full option, not a modification.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Basketball</summary>
+    <div class="d-body">
+      <p>Unit 8 in May on the outside courts, with the mini gym hoop as backup. Dribbling, passing, shooting baseline, then spacing, give-and-go, defense, and a team play students design and test. Students rotate through captain, coach, and scorekeeper from role cards. The laptop lesson researches places to play in Boston and who gets access to them. Knockout and 4 Square on sub days.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Pickleball, cornhole, and tennis</summary>
+    <div class="d-body">
+      <p><strong>Cornhole</strong> runs along the side wall all through Unit 5 and as a recovery option in the strength unit. Accuracy card: bags on the board out of 8. <strong>Pickleball</strong> joins the net games when the paddles arrive. <strong>Tennis</strong> courts open in June for student choice.</p>
+    </div>
+  </details>
+</div>
+
+<!-- ============ GRADING ============ -->
+<div class="panel" id="grading" role="tabpanel" aria-labelledby="tab-grading" hidden>
+  <section>
+    <h2>How grades work</h2>
+    <p>Your grade reflects what you can do and know, not how fast you are, how strong you are, or how hard you're trying (although effort is part of learning). Four parts, one piece of evidence each per unit.</p>
+    <div class="tw">
+    <table>
+      <caption>The four parts of the grade</caption>
+      <thead><tr><th>Part</th><th class="n">Weight</th><th>What it measures</th><th>Evidence each unit</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Motor Skills</strong></td><td class="n">35%</td><td>Can you show the unit's main skill with control and proper form?</td><td>One skill check in the Feature, scored 1 to 4</td></tr>
+        <tr><td><strong>Knowledge</strong></td><td class="n">25%</td><td>Do you understand the fitness, health, and strategy ideas of the unit?</td><td>One laptop lesson quiz or short written response</td></tr>
+        <tr><td><strong>Fitness Goal</strong></td><td class="n">20%</td><td>Did you set a personal goal and make measurable progress toward it?</td><td>Your training log against your goal</td></tr>
+        <tr><td><strong>Personal Responsibility</strong></td><td class="n">20%</td><td>Do you participate respectfully, engage fully, and reflect honestly?</td><td>Weekly 1 to 4 self-rating and an end-of-unit reflection</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <details>
+    <summary>The 1 to 4 scale</summary>
+    <div class="d-body">
+      <div class="tw">
+      <table>
+        <caption>What each score means</caption>
+        <thead><tr><th>Score</th><th>Level</th><th>What it looks like</th></tr></thead>
+        <tbody>
+          <tr><td class="n">4</td><td>Advanced</td><td>Skill is consistent and refined. Deep understanding. Exceeded the goal. Reflects thoughtfully.</td></tr>
+          <tr><td class="n">3</td><td>Proficient</td><td>Skill with control. Shows understanding. Progress on the goal. Reflects clearly.</td></tr>
+          <tr><td class="n">2</td><td>Developing</td><td>Emerging skill. Partial understanding. Minimal progress. Limited reflection.</td></tr>
+          <tr><td class="n">1</td><td>Beginning</td><td>Minimal skill. Limited understanding. No progress yet. Sparse reflection.</td></tr>
+          <tr><td>Inc</td><td>Incomplete</td><td>Did not attempt the assessment. Schedule a make-up.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Unit grade is the weighted average. Example: Motor 3, Knowledge 3, Fitness 3, Responsibility 4 gives 3.2 out of 4, a B. On the gym poster, 4 is an A, 3 a B, 2 a C, 1 a D.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Participation and personal responsibility</summary>
+    <div class="d-body">
+      <p>Participation is not a points column. It is the Personal Responsibility part of the grade, and it is scored on what the student does and says about their own work: the weekly self-rating on the norm of the day, and the end-of-unit reflection. A 4 means fully engaged every class, helps others, honest reflection. A 1 means minimal engagement and no ownership.</p>
+      <p>Students cannot skip the spaces they like less. The Feature, the weight room, the cardio suite, and the laptop lesson each teach something different. Students who cannot move on a given day still participate: they coach, keep score, do the laptop lesson, or write the reflection.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Goals: the SMART cycle</summary>
+    <div class="d-body">
+      <ol class="steps">
+        <li><strong>Baseline.</strong> 10-minute bike or rower distance, a bodyweight circuit, flexibility, and the 1 to 10 effort scale. Recorded in week 1 or 2.</li>
+        <li><strong>One SMART goal.</strong> Specific, Measurable, Achievable, Relevant, Time-bound, with barriers, solutions, and who can help.</li>
+        <li><strong>Weekly check-in.</strong> Progress, on track or not, notes. The wellness tracker rates fitness, food, sleep, mood, and connection 1 to 5.</li>
+        <li><strong>Retest and reflect.</strong> Final numbers next to the baseline. What changed. What I learned.</li>
+      </ol>
+      <p>Fitness Goal score: 4 for exceeding the goal or 15% or more progress with consistent tracking; 3 for reaching the goal or 5 to 15% progress; 2 for under 5% or spotty tracking; 1 for no tracking. Progress is (final minus baseline) divided by baseline.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Projects and the capstone</summary>
+    <div class="d-body">
+      <div class="tw">
+      <table>
+        <caption>The four project themes across the year</caption>
+        <thead><tr><th>Project</th><th>Season</th><th>What it contains</th></tr></thead>
+        <tbody>
+          <tr><td>My Baseline and My Goal</td><td>Fall</td><td>Baseline data table, one SMART goal, a 4-week plan</td></tr>
+          <tr><td>My 4-Week Training Program</td><td>Winter</td><td>Design it, do it, report results with progression</td></tr>
+          <tr><td>My Stress Toolkit</td><td>Late winter</td><td>Personal stress plan, teach a 3-minute routine to a small group</td></tr>
+          <tr><td>My Lifelong Activity Plan (capstone)</td><td>Spring</td><td>Presentation comparing first and final data, plan for after the class ends</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Every student finishes their rotation with a <strong>personal activity plan</strong>: a goal, the FITT details (how often, how hard, how long, what type), a schedule, how it progresses, and how they will check it. Scored 1 to 4 on those five criteria, with a parallel rubric for students with IEPs, 504 plans, or newer English. Students may present to the class, to a small group, or on video. Families are invited to the June share.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Reassessment: you get another chance</summary>
+    <div class="d-body">
+      <p><strong>You have the right to reassess if you score 1 or 2 on any component.</strong></p>
+      <ol class="steps">
+        <li>You score a 1 or 2.</li>
+        <li>You practice for 1 to 2 weeks with teacher feedback, peer coaching, or self-study.</li>
+        <li>You ask for a reassessment.</li>
+        <li>Your new score replaces the old one. Not averaged. Replaced.</li>
+      </ol>
+      <p>Why? Competency is about mastery, not speed. If you weren't ready the first time, you get another chance after learning.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What is not graded</summary>
+    <div class="d-body">
+      <p>These do not touch the academic grade. They are handled through school systems and conversations, not grade penalties:</p>
+      <ul>
+        <li>Tardiness</li>
+        <li>Dress code and uniform</li>
+        <li>General behavior and compliance</li>
+        <li>Participation points</li>
+        <li>Effort self-ratings</li>
+      </ul>
+      <p>Low grades are signals to me that you need help, not labels of who you are. If a grade drops below a B, Mr. English reaches out, asks what is in the way, offers specific support, and schedules a reassessment.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How you will know how you are doing</summary>
+    <div class="d-body">
+      <ul>
+        <li><strong>Every 2 weeks:</strong> grade updated with new unit progress.</li>
+        <li><strong>End of each unit:</strong> full unit grade plus written feedback on what went well and what to focus on next.</li>
+        <li><strong>Anytime:</strong> email to set up a check-in.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<!-- ============ FAMILIES ============ -->
+<div class="panel" id="families" role="tabpanel" aria-labelledby="tab-families" hidden>
+  <section>
+    <h2>For families</h2>
+    <p>This page is for you. If transportation, equipment cost, or health issues get in the way, tell me. We'll problem-solve.</p>
+    <p class="small"><strong>¿Prefiere leer en español?</strong> Use la función "Traducir" de su navegador (Chrome: clic derecho, "Traducir al español"). El resumen de una página está disponible en inglés y español más abajo. Otros idiomas a pedido.</p>
+    <p class="small">Write to me in any language. Boston Public Schools also provides free interpretation for family meetings; ask the main office.</p>
+  </section>
+
+  <details>
+    <summary>Syllabus and one-page summary</summary>
+    <div class="d-body">
+      <p><a class="btn ghost" href="docs/PE1_Syllabus_2026-27.docx">PE 1 syllabus (Word, 55 KB)</a> &nbsp; <a class="btn ghost" href="docs/PE2_Syllabus_2026-27.docx">PE 2 syllabus (Word, 53 KB)</a> &nbsp; <a class="btn ghost" href="docs/PE_AT_A_GLANCE_EN_ES.docx">PE at a Glance, English and Spanish (Word, 48 KB)</a></p>
+      <p class="small">The syllabus has a signature page. Please return it signed during the first weeks of your student's rotation.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How to reach Mr. English</summary>
+    <div class="d-body">
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:zacharyjenglish@gmail.com">zacharyjenglish@gmail.com</a>. Replies within one school day.</li>
+        <li><strong>Office hours:</strong> Mondays, Wednesdays, Thursdays, 3:15 to 3:45 PM, in the Commons.</li>
+        <li><strong>Phone:</strong> Fenway High School main office, (617) 635-9911. They will get a message to me.</li>
+      </ul>
+      <p><strong>What you will hear from me:</strong> a monthly email on what we are learning and what to watch for at home, quarterly progress reports, and a call or email within 24 hours if a concern comes up.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What to bring, and what happens if you forget</summary>
+    <div class="d-body">
+      <ul>
+        <li>Comfortable clothes you can move in. Nothing fancy, just functional.</li>
+        <li>Closed-toe athletic shoes. Required in the weight room.</li>
+        <li>A water bottle.</li>
+        <li>A layer or sweatshirt for outdoor units in cold weather.</li>
+        <li>Openness to trying new things.</li>
+      </ul>
+      <p>If you forget: we have loaner sneakers and water. Not a reason to sit out. We'll find a way for you to participate.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Absences and make-up work</summary>
+    <div class="d-body">
+      <p>One class a week means one absence is a whole week. Missing class doesn't mean missing learning.</p>
+      <ol class="steps">
+        <li>Document the absence with the main office.</li>
+        <li>Let Mr. English know as soon as you can.</li>
+        <li>Make-up work is in Google Classroom. Skill checks can be redone the next time the class meets, or at a scheduled make-up before or after school or at lunch.</li>
+      </ol>
+      <p>Extended absence (2 weeks or more): talk to me as soon as you know and we will design a modified plan.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Access and accommodations</summary>
+    <div class="d-body">
+      <p><strong>You have the right to alternative assessments and modified activities.</strong> No one gets excluded from PE. We find a way.</p>
+      <ul>
+        <li><strong>IEP, 504, injury, chronic condition, temporary issue:</strong> tell Mr. English as soon as possible. Parallel activities on the same standards. Wall push-ups or band presses instead of floor push-ups. Wheelchair-specific movement and agility work. Swapped activities while an injury heals.</li>
+        <li><strong>Anxiety or a bad PE experience in the past:</strong> choose inside over outside, work with a friend, sit out one activity while doing another, talk with me privately about what helps.</li>
+        <li><strong>Cannot participate today:</strong> tell me before class starts. A nurse or doctor note covers longer periods. Students who cannot move still learn: they coach, keep score, do the laptop lesson, or write the reflection.</li>
+        <li><strong>Learning English:</strong> every lesson has pictures, short instructions, sentence frames, and a word bank. Students can draft in their home language first. Skill checks do not depend on English. Spanish materials are available and other languages on request.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Questions families ask</summary>
+    <div class="d-body">
+      <p><strong>Is there homework?</strong> Not in the traditional sense. Logging activity outside class, wellness reflections, and video self-checks are optional and help.</p>
+      <p><strong>Does my student need a uniform?</strong> No. Clothes they can move in and sneakers that tie.</p>
+      <p><strong>Is the weight room safe?</strong> Nobody lifts with weight until they pass a safety check-off, nobody lifts alone, and no more than 8 students lift at a time with the teacher circulating.</p>
+      <p><strong>Do students go off campus?</strong> Yes, for walking routes on Boston Common in the fall and for outdoor units when it is warm. Lead and sweep vests, set routes, and a weather plan every time.</p>
+      <p><strong>Is this the same as Health class?</strong> No. The laptop station teaches health concepts that match the district Health curriculum. Sexual health is taught in Health class with the district's family opt-out process, not here.</p>
+      <p><strong>How can I help at home?</strong> Ask "How's your fitness goal going?" Ask your student to teach you a skill or take a walk with you. Tell me about barriers, injuries, and conditions.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Help outside class</summary>
+    <div class="d-body">
+      <ul>
+        <li><a href="https://www.bostonpublicschools.org/health-services" rel="noopener">BPS Health Services</a></li>
+        <li><a href="https://988lifeline.org/" rel="noopener">988 Suicide and Crisis Lifeline</a>, call or text 988</li>
+        <li><a href="https://www.boston.gov/departments/boston-centers-youth-families" rel="noopener">Boston Centers for Youth and Families</a>, community centers, gyms, and pools</li>
+        <li><a href="https://www.boston.gov/departments/parks-and-recreation" rel="noopener">Boston Parks and Recreation</a>, courts and fields near you</li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<!-- ============ STANDARDS AND DESIGN ============ -->
+<div class="panel" id="design" role="tabpanel" aria-labelledby="tab-design" hidden>
+  <section>
+    <h2>How this course is designed</h2>
+    <p>Every unit plan names the standards it teaches from six sources. Each space owns part of the grade, so every grade category has a natural piece of evidence. Nothing here is decoration: if it is on this page, it is in the unit plans.</p>
+  </section>
+
+  <details>
+    <summary>The standards behind each unit</summary>
+    <div class="d-body">
+      <div class="tw">
+      <table>
+        <caption>Six sources cited in the unit plans</caption>
+        <thead><tr><th>Source</th><th>What it is</th><th>How it shows up in class</th></tr></thead>
+        <tbody>
+          <tr><td><strong>BPS Physical Education Framework</strong> (2026 draft)</td><td>District outcomes for grades 9 to 12 in four strands: Movement Skills and Concepts (M), Health-Related Fitness (F), Personal and Social Skills (PS), Lifelong Physical Activity (LL)</td><td>Each strand owns a grade category. Movement in the Feature, Fitness in the weight room and cardio suite, PS and LL in every space</td></tr>
+          <tr><td><strong>Massachusetts Comprehensive Health and Physical Education Framework</strong> (2023)</td><td>State standards by end of grade 12, organized by practice (decision-making, self-management and goal-setting, communication, movement skills, analyzing influences, information seeking, advocacy) and topic (physical activity and fitness, mental and emotional health, nutrition, substance use, community health)</td><td>The SMART goal cycle, the stress toolkit, the supplement label check, and the places-to-play research each map to a practice</td></tr>
+          <tr><td><strong>SHAPE America National PE Standards</strong> (2024)</td><td>Four national standards: 1 develops a variety of motor skills; 2 applies knowledge related to movement and fitness concepts; 3 develops social skills through movement; 4 develops personal skills, identifies personal benefits of movement, and chooses to engage in physical activity</td><td>Every unit names two or three. Level 1 grade-level outcomes are quoted in the plans</td></tr>
+          <tr><td><strong>WIDA English Language Development Standards</strong> (2020; WIDA is the consortium Massachusetts uses for multilingual learners)</td><td>Language expectations for multilingual learners, grades 9 to 12, through four Key Language Uses: Narrate, Inform, Explain, Argue</td><td>Every lesson has a language objective and a sentence frame. All four uses appear across the year</td></tr>
+          <tr><td><strong>Common Core literacy standards</strong>, grades 9 to 10</td><td>Reading technical text, informative writing, speaking and listening</td><td>Reading a station card, writing the training program, presenting the capstone</td></tr>
+          <tr><td><strong>BPS Health Education</strong>, Level 1</td><td>The district health curriculum units</td><td>Each PE unit names the Health unit its laptop lessons connect to</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="small">Massachusetts requires standards-based physical education for all students (M.G.L. c.71, s.3). The course also meets the BPS expectation that a quarter of PE time builds social-emotional skills.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Priority standards by unit</summary>
+    <div class="d-body">
+      <div class="tw">
+      <table>
+        <caption>Priority standards quoted in each unit plan (BPS codes, MA codes, SHAPE standards, WIDA uses)</caption>
+        <thead><tr><th>Unit</th><th>BPS PE Framework</th><th>MA 2023</th><th>SHAPE 2024</th><th>WIDA</th></tr></thead>
+        <tbody>
+          <tr><td>1 Foundations</td><td>PS.52, PS.54, PS.58, PS.70, F.36</td><td>12.3.PF.1, 12.3.PF.2, 12.3.PF.9, 12.1.PF.6</td><td>3, 4</td><td>Narrate, Inform</td></tr>
+          <tr><td>2 Fitness planning and walking</td><td>F.33, F.34, F.40, LL.46, LL.47</td><td>12.2.PF.6, 12.2.PF.8, 12.2.PF.12, 12.2.PF.1</td><td>2, 4</td><td>Explain</td></tr>
+          <tr><td>3 Soccer and futsal</td><td>M.72, M.77, M.78, M.80, PS.55</td><td>12.4.PF.1, 12.4.PF.6, 12.3.PF.3, 12.3.PF.4, 12.1.PF.1</td><td>1, 2, 3</td><td>Explain, Argue</td></tr>
+          <tr><td>4 Strength and power</td><td>F.36, F.37, M.74, LL.55</td><td>12.4.PF.4, 12.4.PF.7, 12.2.PF.9, 12.1.SU.2</td><td>1, 2, 4</td><td>Explain</td></tr>
+          <tr><td>5 Net and target games</td><td>M.72, M.73, M.79, PS.59</td><td>12.4.PF.1, 12.4.PF.5, 12.3.PF.10, 12.2.MH.6</td><td>1, 2, 4</td><td>Inform, Explain</td></tr>
+          <tr><td>6 Yoga and mindfulness</td><td>F.38, F.39, F.42, LL.58</td><td>12.2.MH.2, 12.2.MH.3, 12.2.MH.1, 12.4.PF.4</td><td>1, 4</td><td>Narrate, Inform</td></tr>
+          <tr><td>7 Dance</td><td>LL.49, LL.50, LL.51, M.76, PS.68</td><td>12.4.PF.2, 12.4.PF.3, 12.3.PF.6, 12.3.MH.5</td><td>1, 3, 4</td><td>Narrate, Argue</td></tr>
+          <tr><td>8 Basketball</td><td>M.78, M.80, PS.60, PS.69, LL.57</td><td>12.4.PF.6, 12.4.PF.5, 12.3.PF.5, 12.1.PF.3</td><td>1, 2, 3</td><td>Argue</td></tr>
+          <tr><td>9 Choice and capstone</td><td>LL.44, LL.45, LL.59, LL.63, F.41</td><td>12.2.PF.7, 12.2.PF.11, 12.2.PF.3, 12.2.PF.2</td><td>2, 4</td><td>Inform, Argue</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="small">MA codes follow the order standards appear under each topic in the 2023 framework and are being checked against the DESE document. BPS codes are from the 2026 draft framework. Golf, volleyball, and the new cardio and strength equipment sit under the same standards as their units (target and net games under M.72, M.73, M.79 and 12.4.PF.1; strength equipment under F.36, F.37 and 12.4.PF.4).</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Each space owns part of the grade</summary>
+    <div class="d-body">
+      <div class="tw">
+      <table>
+        <caption>Space, strand, grade category, and evidence</caption>
+        <thead><tr><th>Space</th><th>BPS strand</th><th>Grade category</th><th>Evidence each unit</th></tr></thead>
+        <tbody>
+          <tr><td>Feature</td><td>Movement Skills and Concepts (M)</td><td>Motor Skills 35%</td><td>One skill check, 1 to 4 rubric</td></tr>
+          <tr><td>Laptops</td><td>Fitness concepts, personal wellness, MA health topics</td><td>Knowledge 25%</td><td>One lesson with a quiz or short written response</td></tr>
+          <tr><td>Weight room, bikes, rower</td><td>Health-Related Fitness (F)</td><td>Fitness Goal 20%</td><td>Training log showing progress toward a personal goal</td></tr>
+          <tr><td>Every space</td><td>Personal and Social Skills (PS), Lifelong Activity (LL)</td><td>Personal Responsibility 20%</td><td>Weekly self-rating, end-of-unit reflection</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Built for multilingual learners</summary>
+    <div class="d-body">
+      <p>More than half of surveyed students speak a language other than English at home. The course is built for that, not adapted to it after the fact.</p>
+      <ul>
+        <li>Every lesson has a language objective and a sentence frame. "When I walk faster, my heart rate ___ because ___." "I noticed ___. Next time try ___."</li>
+        <li>Picture station cards, photo sequence cards for every lift, labeled diagrams, word walls, and norms posters in home languages.</li>
+        <li>Partner rehearsal before sharing out. Drafting in the home language first. Bilingual cue cards at the Anchors.</li>
+        <li>Two units (Foundations and Dance) where students bring games and music from their own cultures, so multilingual students sit in the expert seat.</li>
+        <li>Skill checks do not depend on English. Knowledge checks offer a choice of format: write, speak, draw, or record.</li>
+      </ul>
+      <div class="tw">
+      <table>
+        <caption>What the class provides at each English proficiency level</caption>
+        <thead><tr><th>Level</th><th>Support</th></tr></thead>
+        <tbody>
+          <tr><td>1 Entering</td><td>Picture cards and lift posters with no reading required, peer demonstration by a bilingual student, "Show me how to ___."</td></tr>
+          <tr><td>2 Emerging</td><td>Heart rate zone chart in colors and numbers, bilingual pacing guide, "My heart rate is ___. I am in zone ___."</td></tr>
+          <tr><td>3 Developing</td><td>Technique checklist with visuals and key words highlighted, "Good form means ___. This keeps my ___ safe."</td></tr>
+          <tr><td>4 Expanding</td><td>Short article with key terms highlighted, "Our team's plan is to ___ in order to ___."</td></tr>
+          <tr><td>5 Bridging</td><td>Independent capstone writing with mentor sentences, peer teaching with minimal support</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Choice, access, and social-emotional learning</summary>
+    <div class="d-body">
+      <p><strong>Many ways in.</strong> Inside or outside. The sign-up board with a floor. Competitive and non-competitive paths in every game unit. Perform for the class or on video. Write or speak. Present to a small group.</p>
+      <p><strong>Many ways to show it.</strong> Parallel activities on the same standards for injuries and disabilities. Modification menus in every space. Seated volleyball, wall push-ups, band presses, wheelchair agility work.</p>
+      <p><strong>Social-emotional skills are built in.</strong> Three norms taught with pictures and gestures. A community agreement students write. A closing circle every class with a self-rating. Conflict huddles in game units. Student leadership roles. A whole unit on stress tools. These map to the five CASEL competencies: self-awareness, self-management, social awareness, relationship skills, responsible decision-making.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How I check that it is working</summary>
+    <div class="d-body">
+      <p>Students measure their starting point in the first two classes: 10-minute bike or rower distance, a bodyweight circuit, flexibility, and the effort scale. They retest at the end of their rotation and the capstone compares the two. Punch cards and Anchor logs show every student met the choice floor.</p>
+      <p>Students give feedback on the class at the start, the middle, and the end of every rotation. One change from that feedback goes back to each section: "You said, I changed." The goal this year is that at least four in five students finish with a personal activity plan scored Proficient or higher, with a reflection comparing baseline to retest.</p>
+      <p><strong>What a visitor sees on any given day:</strong> a Do Now on the board, a student leading the warm-up, the whole class in the Feature for Block 1, spaces opening by sign-up board for Block 2 with the teacher circulating, and a closing circle with a sentence frame and a 1 to 4 self-rating.</p>
+    </div>
+  </details>
+</div>
+
+</main>
+
+<footer>
+  <p>Course site maintained by Zachary English, PE and Health, Fenway High School, 67 Alleghany St, Boston, MA 02120. Main office (617) 635-9911.</p>
+  <p>This is a teacher's course page, not the official school website. Official site: <a href="https://www.fenwayhs.org" rel="noopener">fenwayhs.org</a>. District: <a href="https://www.bostonpublicschools.org" rel="noopener">bostonpublicschools.org</a>. Boys soccer: <a href="https://zjenglish.github.io/fenway-soccer-dashboard/" rel="noopener">Fenway soccer</a>.</p>
+  <p>No student names, photos, or records appear on this site. Illustrations are original artwork made for the course posters. Last updated September 26, 2026.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  var panels=[].slice.call(document.querySelectorAll('[role="tabpanel"]'));
+  function select(id,push){
+    tabs.forEach(function(t){var on=t.getAttribute('aria-controls')===id;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;});
+    panels.forEach(function(p){p.hidden=p.id!==id;});
+    var t=document.getElementById('tab-'+id);
+    if(t&&t.scrollIntoView){t.scrollIntoView({block:'nearest',inline:'center'});}
+    if(push!==false){try{history.replaceState(null,'','#'+id);}catch(e){}}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t.getAttribute('aria-controls'));window.scrollTo({top:0});});
+    t.addEventListener('keydown',function(e){
+      var j=i;
+      if(e.key==='ArrowRight')j=(i+1)%tabs.length;else if(e.key==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;
+      else if(e.key==='Home')j=0;else if(e.key==='End')j=tabs.length-1;else return;
+      e.preventDefault();tabs[j].focus();select(tabs[j].getAttribute('aria-controls'));
+    });
+  });
+  function fromHash(){
+    var id=(location.hash||'').replace('#','');
+    if(id&&document.getElementById('tab-'+id)){select(id,false);}
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]');
+    if(!a)return;var id=a.getAttribute('href').slice(1);
+    if(document.getElementById('tab-'+id)){e.preventDefault();select(id);window.scrollTo({top:0});}
+  });
+  window.addEventListener('hashchange',fromHash);
+  fromHash();
+  window.addEventListener('load',function(){if(location.hash){setTimeout(function(){window.scrollTo(0,0);},0);}});
+})();
+</script>
+</body>
+</html>
